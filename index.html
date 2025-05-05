@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الكلية</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">TEL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html">المواد الدراسية</a></li>
+            <li><a href="faculty.html">أعضاء هيئة التدريس</a></li>
+            <li><a href="about.html">عن القسم</a></li>
+            <li><a href="us.html">من نحن</a></li>
+        </ul>
+        <button class="btn-dark" id="btnDark"><i class="fa-solid fa-sun" id="iocnMode"></i></button>
+    </nav>
+
+    <main>
+        <span class="goToTop"><i class="fa-solid fa-arrow-up"></i></span>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="./img/download (3).jpg" alt="صورة 1">
+                    <div class="slide-content">
+                        <h2>مرحباً بكم في كلية الحاسبات والمعلومات</h2>
+                        <p>نقدم لكم تعليماً متميزاً في مجال علوم الحاسب</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/download (2).jpg" alt="صورة 2">
+                    <div class="slide-content">
+                        <h2>برامج أكاديمية متطورة</h2>
+                        <p>نواكب أحدث التطورات في مجال التكنولوجيا</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/download (1).jpg" alt="صورة 3">
+                    <div class="slide-content">
+                        <h2>كوادر تدريسية متميزة</h2>
+                        <p>نقدم لكم أفضل الخبرات الأكاديمية</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/download (1).jpg" alt="صورة 3">
+                    <div class="slide-content">
+                        <h2>كوادر تدريسية متميزة</h2>
+                        <p>نقدم لكم أفضل الخبرات الأكاديمية</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+            <div class="slider-dots">
+
+            </div>
+        </div>
+
+        <section class="news">
+            <h2 class="we-title">أحدث الأخبار</h2>
+
+            <div class="news-grid">
+                <div class="news-card">
+                    <h3>عنوان الخبر الأول</h3>
+                    <p>محتوى الخبر الأول مع تفاصيل إضافية...</p>
+                    <span class="date">1 مايو 2024</span>
+                </div>
+                <div class="news-card">
+                    <h3>عنوان الخبر الثاني</h3>
+                    <p>محتوى الخبر الثاني مع تفاصيل إضافية...</p>
+                    <span class="date">30 أبريل 2024</span>
+                </div>
+                <div class="news-card">
+                    <h3>عنوان الخبر الثالث</h3>
+                    <p>محتوى الخبر الثالث مع تفاصيل إضافية...</p>
+                    <span class="date">29 أبريل 2024</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footerContect">
+
+                <ul class="madia">
+                    <div><a target="_blank" href="https://www.facebook.com/edu.azhar?locale=ar_AR"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div><a target="_blank" href="https://chat.whatsapp.com/FaHFPHUE0bd4vIjQqQ648P"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div><a target="_blank" href="https://www.instagram.com/azhar_university/"><i class="fa-brands fa-instagram"></i></a></div>
+                </ul>
+                <ul class="websites">
+                    <li><a target="_blank" href="https://www.azhar.eg/splash.html">جامعه الازهر</a></li>
+                    <li><a target="_blank" href="https://education.azhar-edu.org/#/home">كلية التربية</a></li>
+                    <li<a target="_blank" href="">
+                        <li><a>قسم تكنولوجيا التعليم </a></li>
+                </ul>
+                <div class="imgs">
+                    <div class="imgDiv"><img src="img/لوجو.png"></div>
+                    <div class="imgDiv"><img src="img/لوجوا الجامعه.png"></div>
+                </div>
+            </div>
+        </div>
+        <p class="copy">حقوق النشر و الطباعه &copy; <span id="data"></span>طلاب جامعه الازهر</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

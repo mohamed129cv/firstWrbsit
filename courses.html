@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المواد الدراسية - موقع الكلية</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">TEL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="courses.html">المواد الدراسية</a></li>
+            <li><a href="faculty.html">أعضاء هيئة التدريس</a></li>
+            <li><a href="about.html">عن القسم</a></li>
+            <li><a href="us.html">من نحن</a></li>
+        </ul>
+        <button class="btn-dark" id="btnDark"><i class="fa-solid fa-sun" id="iocnMode"></i></button>
+    </nav>
+
+    <main>
+        <span class="goToTop"><i class="fa-solid fa-arrow-up"></i></span>
+
+        <section class="courses">
+            <h1 class=".we-title ">المواد الدراسية</h1>
+            <div class="search-container" >
+                <input onkeyup="search(this.value)" type="text" id="course-search" placeholder="ابحث عن مادة...">
+            </div>
+            <div class="year-filter">
+                <button class="filter-btn active" data-year="1">السنة الأولى</button>
+                <button class="filter-btn" data-year="2">السنة الثانية</button>
+                <button class="filter-btn" data-year="3">السنة الثالثة</button>
+                <button class="filter-btn" data-year="4">السنة الرابعة</button>
+            </div>
+            <div class="mybooks">
+
+                <div class="specialization-filter " data-year="" style="display: none;">
+                    <button class="spec-btn active" data-spec="tech">حاسب الي </button>
+                    <button class="spec-btn" data-spec="lib">المكتبات والمعلومات</button>
+                    <button class="spec-btn" data-spec="it">تكنولوجيا المعلومات</button>
+                </div>
+                <p class="alrtbooks">لا يوجد هذا الكتاب </p>
+                <div class="courses-grid">
+                    <!-- السنة الأولى -->
+
+                    <div class="course-card" data-year="1">
+                        <h3>المدخل الي تكنولوجيا التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="1">
+                        <h3>المدخل الي تكنولوجيا التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="1">
+                        <h3>المدخل الي الكتبات و المعلومات</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="1">
+                        <h3>المجسمات و المعارض و المتاحف</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="1">
+                        <h3>مقدمة في الحاسب الي </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="1">
+                        <h3>الرسوم التعليمة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+                    <!-- الترم الثاني  -->
+
+                    <div class="course-card" data-year="1">
+                        <h3>تكنولوجيا المعلومات و الاتصال في التعليم </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="1">
+                        <h3>مصادر المعرفة في المؤسسات التعليمية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="1">
+                        <h3>التصميم التعليم </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="1">
+                        <h3>صيانه الاجهز التعليمة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <!-- السنة الثانية -->
+                    <!-- الترم الاول  -->
+                    <div class="course-card" data-year="2">
+                        <h3>تطبيقات الحاسب الالي في التعليم </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="2">
+                        <h3>اجهزة عرض </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="2">
+                        <h3>اقتصاديات المعلومات و المعرفة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="2">
+                        <h3>العمليات الفنية في المؤسسات التعليمية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <!-- الترم الثاني  -->
+
+                    <div class="course-card" data-year="2">
+                        <h3>مقدمة في البرمجه التعليمة</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="2">
+                        <h3>الثقافة الرقمية و التحول الرقمي</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="2">
+                        <h3>المكتبات النوعية</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="2">
+                        <h3>نظم المعلومات</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="2">
+                        <h3>اساسيات التعليم الالكتروني</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <!-- السنة الثالثة -->
+                    <!-- الفلتر للتخصصات  -->
+
+                    <!--  حاسب الي ثالثة  -->
+
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>الحاسب الالي و تكنولوجيا التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>انتاج مصادر التعلم الرقمية</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>تطبيقات الويب </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>الذكاء الاصطناعي </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <!-- الترم الثاني حاسب الي  -->
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>الحاسب الي و تكنولوجيا التعليم2</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>تطبيقات الويب</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>نظم ادارة التعليم الاكتروني</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="tech">
+                        <h3>قواعد البيانات و نظم ادارتها</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+
+                    <!-- مكتبات  -->
+                    <!-- الترم الاول مكتبات  -->
+
+
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>نظم تصنيف المعرفة</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>الفهرسه الية المقروئة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>النظم الالية في المكتبات و مركز المعلومات</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>مدخل الي علم الوثائق</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الأول</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- الترم الثاني مكتبات  -->
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>نظم و عمليات الارشفة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>التحليل الموضوعي و التكشيف الرقمي</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>الفهرسة المقروءة اليا 2 </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="3" data-spec="lib">
+                        <h3>مصادر المعلومات الرقمية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <!-- تكنولوجيا  -->
+
+                    <!-- تكنولوجيا الترم الاول  -->
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            تطبيقات الانترنت في التعليم
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            تقنيات الطباعه
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            اساسيات التصوير الرقمي
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            الذكاء الاصطناعي و النظم الخبيره في التعليم
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+
+                    <!-- تكنولوجيا الترم الثاني  -->
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            تقنية الرسوم الرقمية
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            البرامج الاذاعية
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            تقنية الرسوم الرقمية
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            تصميم و انتاج االبرامج الفديوا الرقمية
+                        </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card" data-year="3" data-spec="it">
+                        <h3>
+                            قواعد البيانات </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <!-- السنة الرابعة -->
+
+                    <!--حاسب الي  الترم الاول  -->
+
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>شبكات الحاسب الي في التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>شبكات الحاسب الي في التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>تطبيقات مكتبيه 2</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>برمجه تعليمة استخدام و توظيف</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>حاسب الي للفئات الخاصة</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <!-- الترم الثاني حاسب  -->
+
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>التقويم الالكتروني</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>تطبيقات الويب 2</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>البئيات الرقمية</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+                    <div class="course-card" data-year="4" data-spec="tech">
+                        <h3>مشروع التخصص</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <!-- مكتبات  -->
+                    <!-- مكتبات الترم الاول  -->
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>مركز مصادر التعلم </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>اقتناءمصادر المعلومات و ادارتها</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>تكنولوجيا النشر الالكتروني </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>المكتبات الرقمية و قواعد البيانات العالمية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الاول</span>
+                        </div>
+                    </div>
+
+                    <!-- مكتبات الترم الثاني  -->
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>ادارة المكتبات و مركز المعلومان </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>خدمات المرجعية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>تكنولوجيا المكتبات للفئات الخاصة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="lib">
+                        <h3>مشروع التخصص </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني</span>
+                        </div>
+                    </div>
+
+                    <!-- تكنولوجيا المعلومات  -->
+                    <!-- تكنولوجيا المعلومات الترم الاول  -->
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>تصميم و تطوير بئات التعلمي الالكترونية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>التعليم الالكتروني</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>البرمجيات التعليمة </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 200</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>
+                            انتاج الصور الرقمية </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الاول </span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- تكنولجا الترم الثاني  -->
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>التقويم الالكتروني </h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>شبكات الحاسب الي في التعليم</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 150</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>تكنولوجيا التعليم فئات خاصة</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-year="4" data-spec="it">
+                        <h3>مشروع التخصص</h3>
+                        <div class="course-info">
+                            <span class="grade">الدرجة: 100</span>
+                            <span class="semester">الترم الثاني </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footerContect">
+
+                <ul class="madia">
+                    <div><a target="_blank" href="https://www.facebook.com/edu.azhar?locale=ar_AR"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div><a target="_blank" href="https://chat.whatsapp.com/FaHFPHUE0bd4vIjQqQ648P"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div><a target="_blank" href="https://www.instagram.com/azhar_university/"><i class="fa-brands fa-instagram"></i></a></div>
+                </ul>
+                <ul class="websites">
+                    <li><a target="_blank" href="https://www.azhar.eg/splash.html">جامعه الازهر</a></li>
+                    <li><a target="_blank" href="https://education.azhar-edu.org/#/home">كلية التربية</a></li>
+                    <li<a target="_blank" href="">
+                        <li><a>قسم تكنولوجيا التعليم </a></li>
+                </ul>
+                <div class="imgs">
+                    <div class="imgDiv"><img src="img/لوجو.png"></div>
+                    <div class="imgDiv"><img src="img/لوجوا الجامعه.png"></div>
+                </div>
+            </div>
+        </div>
+        <p class="copy">حقوق النشر و الطباعه &copy; <span id="data"></span>طلاب جامعه الازهر</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
